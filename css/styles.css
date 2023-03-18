@@ -1,0 +1,26 @@
+body {
+  background-color: #F1f5f8;
+  font-family: 'Trispace', sans-serif;
+  margin: 0;
+}
+
+h1, h2{
+  font-size: 1rem;
+}
+
+h1 {
+  color: #55CEED;
+}
+
+#nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+
+.nav-right {
+  display: flex;
+  gap: 30px;
+}
