@@ -27,13 +27,16 @@ h1, span {
 
 #main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 90vh;
 }
 
 .wrapper {
   background-color: #000;
   border-radius: 15px;
+  margin-bottom: 20px;
   width: 400px;
 }
 
