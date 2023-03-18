@@ -8,7 +8,7 @@ h1, h2{
   font-size: 1rem;
 }
 
-h1 {
+h1, span {
   color: #55CEED;
 }
 
@@ -23,4 +23,21 @@ h1 {
 .nav-right {
   display: flex;
   gap: 30px;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background-color: #000;
+  border-radius: 15px;
+  width: 400px;
+}
+
+.background-color-text {
+  color: #fff;
+  font-size: 1.5rem;
 }
