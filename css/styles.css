@@ -18,6 +18,7 @@ h1, span {
   justify-content: space-around;
   align-items: center;
   height: 50px;
+  box-shadow: 0px -15px 30px;
 }
 
 .nav-right {
