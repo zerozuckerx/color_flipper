@@ -36,12 +36,13 @@ h1, span {
 
 .wrapper {
   background-color: #000;
-  border-radius: 15px;
+  border-radius: 8px;
   margin-bottom: 20px;
-  width: 400px;
+
 }
 
 .background-color-text {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  margin: 15px
 }
