@@ -1,6 +1,8 @@
 body {
   background-color: #F1f5f8;
-  font-family: 'Trispace', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 0.1rem;
   margin: 0;
 }
 
@@ -22,7 +24,6 @@ span {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* height: 50px; */
   box-shadow: 0px -15px 30px;
 }
 
@@ -36,7 +37,7 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  min-height: 90vh;
 }
 
 .wrapper {
@@ -54,10 +55,11 @@ span {
 
 .click {
   background-color: transparent;
+  border: 2px solid #000;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 600;
   height: 45px;
   width: 140px;
 }
