@@ -15,6 +15,21 @@ h2 {
   font-size: 1rem;
 }
 
+ul {
+  padding-left: 0;
+}
+
+li {
+  display: inline;
+  font-size: 1rem;
+  font-weight: 600;
+  list-style-type: none;
+}
+
+li:first-child {
+  margin-right: 20px;
+}
+
 span {
   color: #49a6e9;
 }
@@ -34,11 +49,6 @@ a:hover {
   justify-content: space-around;
   align-items: center;
   box-shadow: 0px -15px 30px;
-}
-
-.nav-right {
-  display: flex;
-  gap: 30px;
 }
 
 #main {
