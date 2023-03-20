@@ -6,11 +6,19 @@ let hex = false;
 
 // *** BUTTON ASSIGMENTS ***
 const colorButton = document.getElementById("btn");
+const switchSimple = document.querySelector(".simple");
+const switchHex = document.querySelector(".hex");
 
 // *** FUNCTIONS ***
+switchSimple.addEventListener("click", () => hex = false);
+switchHex.addEventListener("click", () => hex = true);
+
+
 colorButton.addEventListener("click", () => {
   if(!hex) {
     simpleFlipper();
+  } else {
+    hexFlipper();
   }
 });
 
@@ -18,4 +26,8 @@ function simpleFlipper() {
   const randomNumber = Math.floor(Math.random() * colorsSimple.length)
   document.body.style.backgroundColor = colorsSimple[randomNumber];
   document.querySelector(".color-name").textContent = colorsSimple[randomNumber];
+}
+
+function hexFlipper() {
+
 }

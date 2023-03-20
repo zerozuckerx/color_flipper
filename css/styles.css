@@ -19,6 +19,15 @@ span {
   color: #49a6e9;
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #49a6e9;
+}
+
 #nav {
   background-color: #fff;
   display: flex;
