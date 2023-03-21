@@ -33,5 +33,13 @@ function simpleFlipper() {
 }
 
 function hexFlipper() {
-
+  const hexColor = ["#"];
+  for(let i = 1; i <= 6; i++) {
+    let randomHexLetter = Math.floor(Math.random() * 16);
+    hexColor.push(colorsHex[randomHexLetter]);
+  }
+  hexString = hexColor.join("")
+  document.body.style.backgroundColor = hexString;
+  document.querySelector(".color-name").textContent = hexString;
+  document.querySelector(".color-name").color = hexString;
 }
