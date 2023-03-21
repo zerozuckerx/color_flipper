@@ -6,13 +6,17 @@ let hex = false;
 
 // *** BUTTON ASSIGMENTS ***
 const colorButton = document.getElementById("btn");
-const switchButtons = document.querySelectorAll(".switch");
-
+const switchSimpleButton = document.querySelector(".switchSimple");
+const switchHexButton = document.querySelector(".switchHex");
 
 // *** FUNCTIONS ***
-switchButtons.forEach(switchButton => switchButton.addEventListener("click", () => {
-  return !hex;
-}));
+switchSimpleButton.addEventListener("click", () => {
+  hex = false;
+});
+
+switchHexButton.addEventListener("click", () => {
+  hex = true;
+});
 
 colorButton.addEventListener("click", () => {
   if(!hex) {

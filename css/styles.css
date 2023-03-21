@@ -52,12 +52,12 @@ a:hover {
   box-shadow: 0px -15px 30px;
 }
 
-.switch {
+.switchSimple, .switchHex {
   background-color: inherit;
   border: none;
 }
 
-.switch:hover {
+.switchSimple:hover, .switchHex:hover {
   color: #49a6e9;
 }
 
