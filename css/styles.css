@@ -23,15 +23,8 @@ h2 {
   font-size: 1rem;
 }
 
-ul {
-  padding-left: 0;
-}
-
 li {
   display: inline;
-  font-size: 1rem;
-  font-weight: 600;
-  list-style-type: none;
 }
 
 li:first-child {
