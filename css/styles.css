@@ -23,27 +23,6 @@ h2 {
   font-size: 1rem;
 }
 
-li {
-  display: inline;
-}
-
-li:first-child {
-  margin-right: 20px;
-}
-
-span {
-  color: #49a6e9;
-}
-
-a {
-  color: #000;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #49a6e9;
-}
-
 #nav {
   background-color: #fff;
   display: flex;
@@ -82,7 +61,11 @@ a:hover {
   margin: 15px
 }
 
-#btn {
+.color-name {
+  color: #49a6e9;
+}
+
+.click-me {
   background-color: transparent;
   border: 2px solid #000;
   border-radius: 8px;
@@ -91,8 +74,12 @@ a:hover {
   width: 140px;
 }
 
-#btn:hover {
+.click-me:hover {
   background-color: #000;
   color: #fff;
   transition: background-color 500ms linear;
+}
+
+.active {
+  border-bottom: 3px solid #49a6e9;
 }

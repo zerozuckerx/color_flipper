@@ -5,7 +5,7 @@ const colorsHex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 let hex = false;
 
 // *** BUTTON ASSIGMENTS ***
-const colorButton = document.getElementById("btn");
+const colorButton = document.querySelector(".click-me");
 const switchSimpleButton = document.querySelector(".switchSimple");
 const switchHexButton = document.querySelector(".switchHex");
 
@@ -20,16 +20,18 @@ switchHexButton.addEventListener("click", () => {
 
 colorButton.addEventListener("click", () => {
   if(!hex) {
-    simpleFlipper();
+    color = simpleFlipper();
   } else {
-    hexFlipper();
+    color = hexFlipper();
   }
+  document.body.style.backgroundColor = color;
+  document.querySelector(".color-name").textContent = color;
+  document.querySelector(".color-name").style.color = color;
 });
 
 function simpleFlipper() {
   const randomNumber = Math.floor(Math.random() * colorsSimple.length)
-  document.body.style.backgroundColor = colorsSimple[randomNumber];
-  document.querySelector(".color-name").textContent = colorsSimple[randomNumber];
+  return colorsSimple[randomNumber];
 }
 
 function hexFlipper() {
@@ -38,8 +40,5 @@ function hexFlipper() {
     let randomHexLetter = Math.floor(Math.random() * 16);
     hexColor.push(colorsHex[randomHexLetter]);
   }
-  hexString = hexColor.join("")
-  document.body.style.backgroundColor = hexString;
-  document.querySelector(".color-name").textContent = hexString;
-  document.querySelector(".color-name").color = hexString;
+  return hexColor.join("");
 }
