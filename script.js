@@ -8,15 +8,33 @@ let hex = false;
 const colorButton = document.querySelector(".click-me");
 const switchSimpleButton = document.querySelector(".switchSimple");
 const switchHexButton = document.querySelector(".switchHex");
+// const switchButtons = document.querySelectorAll(".switch");
 
 // *** FUNCTIONS ***
 switchSimpleButton.addEventListener("click", () => {
   hex = false;
+  switchSimpleButton.classList.add("active");
+  switchHexButton.classList.remove("active");
 });
 
 switchHexButton.addEventListener("click", () => {
   hex = true;
+  switchHexButton.classList.add("active");
+  switchSimpleButton.classList.remove("active");
 });
+
+// switchButtons.forEach(switchButton => {
+//   switchButton.addEventListener("click", () => {
+//     if(switchButton.textContent === "Hex") {
+//       hex = false;
+//       switchButton.classList.add("active");
+//       switchButton.classList.remove("active");
+//     } else {
+//       hex = true;
+//       switchButton.classList.add("active");
+//       switchButton.classList.remove("active");
+//     }
+// })});
 
 colorButton.addEventListener("click", () => {
   if(!hex) {
