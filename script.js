@@ -37,11 +37,20 @@ function simpleFlipper() {
   return colorsSimple[randomNumber];
 }
 
+// function hexFlipper() {
+//   const hexColor = ["#"];
+//   for(let i = 1; i <= 6; i++) {
+//     let randomHexLetter = Math.floor(Math.random() * colorsHex.length);
+//     hexColor.push(colorsHex[randomHexLetter]);
+//   }
+//   return hexColor.join("");
+// }
+
 function hexFlipper() {
-  const hexColor = ["#"];
+  let hexColor = "#";
   for(let i = 1; i <= 6; i++) {
     let randomHexLetter = Math.floor(Math.random() * colorsHex.length);
-    hexColor.push(colorsHex[randomHexLetter]);
+    hexColor += colorsHex[randomHexLetter];
   }
-  return hexColor.join("");
+  return hexColor
 }
